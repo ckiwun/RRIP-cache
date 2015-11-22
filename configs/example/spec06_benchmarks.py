@@ -27,9 +27,9 @@ perlbench.cmd = [perlbench.executable] + ['-I./lib', 'checkspam.pl', '2500', '5'
 bzip2 = LiveProcess()
 bzip2.executable =  'bzip2' + x86_suffix
 # TEST CMDS
-#bzip2.cmd = [bzip2.executable] + ['input.program', '5']
+bzip2.cmd = [bzip2.executable] + ['input.program', '5']
 # REF CMDS
-bzip2.cmd = [bzip2.executable] + ['input.source', '280']
+#bzip2.cmd = [bzip2.executable] + ['input.source', '280']
 #bzip2.cmd = [bzip2.executable] + ['chicken.jpg', '30']
 #bzip2.cmd = [bzip2.executable] + ['liberty.jpg', '30']
 #bzip2.cmd = [bzip2.executable] + ['input.program', '280']
